@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
+  <link href="https://fonts.googleapis.com/css?family=Hepta+Slab&display=swap" rel="stylesheet">
   <title>My Resume</title>
 
   <link rel="stylesheet" href="css/index.css">
@@ -14,6 +14,113 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+	<div class="container">
+		<header>
+			<nav id="navBar">
+				<a id="bar-item" href="index.html"> Home </a>
+				<a id="bar-item" href="#"> About </a>
+				<div class="dropdown">
+				    <a href="#" id="bar-item"> <button class="dropbtn">Projects</a> 
+				      <i class="fa fa-caret-down"></i>
+				    </button>
+				    <div class="dropdown-content">
+				      <a href="#"> Project 1 </a>
+				      <a href="#"> Project 2 </a>
+				      <a href="#"> Project 3 </a>
+				    </div>
+				  </div> 
+				<a id="bar-item" href="#"> Contact Me </a>
+		</header>
+	  
+		<img src="img/MeSmall.jpg" align="left">
+
+		<h1>Bridget Kacprzyk</h1>
+		<div class="descrip">
+			Lambda School Graduate ~ Web Developer
+		</div>
+
+		<h2>Listen Up</h2>
+			<p class="indent">
+		  		I would be a great hire because I have a wonderfully bubbly personality. I love to work hard and have fun while doing it. Also given the chance I can prove I will work harder than anyone else to accomplish what I want.
+			</p>
+		<h3 id="skills">Skills</h3>
+			<table align="right">
+			  <tr>
+			    <th>Clientele Interaction</th>
+			  </tr>
+			  <tr>
+			    <td>Administrative Duties</td>
+			  </tr>
+			  <tr>
+			    <td>Microsoft Office</td>
+			  </tr>
+			  <tr>
+			    <td>WPM: 45</td>
+			  </tr>
+			  <tr>
+			    <td>Task Accuracy</td>
+			  </tr>
+			  <tr>
+			    <td>Self-Motivation</td>
+			  </tr>
+			</table>
+		<h3 id="wTitle">Work History</h3>
+			<table class="work" >
+			  <tr>
+			    <th>Job Title</th>
+			    <th>Company</th>
+			    <th>Dates</th>
+			  </tr>
+			  <tr>
+			    <td>Assistant Manager</td>
+			    <td>TST</td>
+			    <td>October 2018 - Present</td>
+			  </tr>
+			  <tr>
+			  	<td>Line Supervisor</td>
+			    <td>George Dellalo's</td>
+			    <td>June 2018 - October 2018</td>
+			  </tr>
+			  <tr>
+			    <td>Barista</td>
+			    <td>Starbucks</td>
+			    <td>October 2017 - June 2018</td>
+			  </tr>
+			</table>
+			<div id="mobile">
+				Assistant Manager<br>
+				TST<br>
+				October 2018 - Present<br>
+				<br>
+				Line Supervisor<br>
+				George Dellalo's<br>
+				June 2018 - October 2018<br>
+				<br>
+				Barista<br>
+				Starbucks<br>
+				October 2017 - June 2018<br>
+
+			</div>
+		<div class="containerC">
+			<form action="mailto:bridgetkacprzyk174@gmail.com">
+				<div id="contact">Contact Me</div>
+
+			<label for="fname">First Name</label>
+			<input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+			<label for="lname">Last Name</label>
+			<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+			<label for="email">Email</label>
+			<input type="text" id="email" name="email" placeholder="Email..">
+
+			<label for="subject">Subject</label>
+			<input type="text" id="subject" name="subject" placeholder="Subject..">
+
+			<input type="submit" value="Submit">
+			</form>
+		</div>
+	</div>
+	
 </body>
 </html>

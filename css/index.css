@@ -1,1 +1,414 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+.spaceB {
+  display: flex;
+  justify-content: space-between;
+}
+.bold {
+  font-size: 3rem;
+  font-weight: bold;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+html .container,
+body .container {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 62.5%;
+  font-family: 'Hepta Slab', serif;
+}
+html .container #navBar,
+body .container #navBar {
+  background: black;
+  padding: 30px;
+  font-size: 3rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+html .container #navBar #bar-item,
+body .container #navBar #bar-item {
+  text-decoration: none;
+  color: white;
+}
+html .container #navBar #bar-item:hover,
+body .container #navBar #bar-item:hover {
+  opacity: 0.5;
+  border-color: grey;
+}
+html .container #navBar .dropdown,
+body .container #navBar .dropdown {
+  float: left;
+  overflow: hidden;
+}
+html .container #navBar .dropbtn,
+body .container #navBar .dropbtn {
+  font-size: 3rem;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 0px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin-top: -7px;
+}
+html .container #navBar .dropdown-content,
+body .container #navBar .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+html .container #navBar .dropdown-content a,
+body .container #navBar .dropdown-content a {
+  float: none;
+  background: black;
+  color: white;
+  font-size: 2rem;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+html .container #navBar .dropdown-content a:hover,
+body .container #navBar .dropdown-content a:hover {
+  background-color: #6f4794;
+  color: white;
+}
+html .container #navBar .dropdown:hover .dropdown-content,
+body .container #navBar .dropdown:hover .dropdown-content {
+  display: block;
+}
+html .container img,
+body .container img {
+  height: auto;
+  width: 22%;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 100px;
+  border-radius: 100px;
+}
+html .container h1,
+body .container h1 {
+  font-size: 7rem;
+  text-align: center;
+  margin-top: 200px;
+  margin-right: 60px;
+  font-weight: bold;
+}
+html .container h2,
+body .container h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 240px;
+  width: 40%;
+  text-align: center;
+}
+html .container .indent,
+body .container .indent {
+  text-indent: 30px;
+  font-size: 3rem;
+  margin-top: 20px;
+  text-align: justify;
+  width: 50%;
+}
+html .container h3,
+body .container h3 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 250px;
+}
+html .container #skills,
+body .container #skills {
+  font-size: 3rem;
+  text-align: center;
+  margin-left: 50%;
+  margin-top: -500px;
+}
+html .container #wTitle,
+body .container #wTitle {
+  margin-top: 500px;
+}
+html .container .work,
+body .container .work {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 2rem;
+  margin-right: 230px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+html .container table,
+body .container table {
+  border-collapse: collapse;
+  width: 30%;
+  font-size: 2rem;
+  margin-right: 150px;
+}
+html .container td,
+body .container td,
+html .container th,
+body .container th {
+  border: 1px solid dodgerblue;
+  text-align: left;
+  padding: 8px;
+}
+html .container tr:nth-child(even),
+body .container tr:nth-child(even) {
+  background-color: dodgerblue;
+}
+html .container .descrip,
+body .container .descrip {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 10px 50px;
+}
+html .container .containerC,
+body .container .containerC {
+  border-radius: 5px;
+  background-color: #8f8f8f;
+  color: #8f8f8f;
+  padding: 20px;
+  margin: 30px 100px;
+}
+html .container .containerC #contact,
+body .container .containerC #contact {
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+}
+html .container .containerC input[type=text],
+body .container .containerC input[type=text],
+html .container .containerC select,
+body .container .containerC select,
+html .container .containerC textarea,
+body .container .containerC textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-size: 2.5rem;
+  background-color: #d9d9d9;
+}
+html .container .containerC input[type=submit],
+body .container .containerC input[type=submit] {
+  background-color: dodgerblue;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 2.5rem;
+}
+html .container .containerC input[type=submit]:hover,
+body .container .containerC input[type=submit]:hover {
+  background-color: black;
+}
+html .container #mobile,
+body .container #mobile {
+  display: none;
+}
+@media (max-width: 500px) {
+  html .container .container,
+  body .container .container {
+    width: 100%;
+  }
+  html .container #navBar,
+  body .container #navBar {
+    display: block;
+    margin: 0px;
+  }
+  html .container img,
+  body .container img {
+    width: 100%;
+  }
+  html .container h1,
+  body .container h1 {
+    font-size: 5rem;
+    margin: 0px;
+  }
+  html .container .descrip,
+  body .container .descrip {
+    margin: 10px 0px;
+    font-size: 1.5rem;
+  }
+  html .container h2,
+  body .container h2 {
+    margin: 50px auto;
+    width: 100%;
+  }
+  html .container .indent,
+  body .container .indent {
+    font-size: 1.7rem;
+    width: 100%;
+    text-align: center;
+  }
+  html .container #skills,
+  body .container #skills {
+    margin: 0px;
+  }
+  html .container table,
+  body .container table {
+    margin: 10px auto;
+    margin-right: 40px;
+  }
+  html .container #wTitle,
+  body .container #wTitle {
+    text-align: center;
+  }
+  html .container .work,
+  body .container .work {
+    display: none;
+  }
+  html .container #mobile,
+  body .container #mobile {
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  html .container .containerC,
+  body .container .containerC {
+    width: 100%;
+    margin: 20px auto;
+    font-size: 1.5rem;
+  }
+}
